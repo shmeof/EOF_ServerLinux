@@ -37,10 +37,10 @@
 		WinSCP
 		
 # 环境
-	### Python
-	### djangon
+	## Python
+	## djangon
 		
-	### spacemacs
+	## spacemacs
 		spacemacs操作：
 			Spacemacs buffer, file, project and layout management
 			http://v.youku.com/v_show/id_XMTM5NDI3NjQxMg==.html
