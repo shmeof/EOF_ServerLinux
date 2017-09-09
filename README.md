@@ -1,5 +1,4 @@
-# EOF_ServerLinux
-## Linux
+# Linux
 	Linux 目录结构
 	http://www.cnblogs.com/CoderJYF/p/6092604.html
 
@@ -33,11 +32,11 @@
 		http://blog.csdn.net/zhang41228/article/details/74457093
 		
 		
-## 工具
+# 工具
 		SecureCRT
 		WinSCP
 		
-## 环境
+# 环境
 	### Python
 	### djangon
 		
@@ -106,16 +105,16 @@
 		C-x 1 只保留当前窗口
 		C-x o 切换窗口
 
-	### git
+	## git
 		
 		
-	### mysql安装：
+	## mysql安装：
 		http://blog.csdn.net/wendellup/article/details/27671725
 		http://blog.csdn.net/gongchenupc/article/details/68066990
 		
 		http://www.cnblogs.com/liuyi2614/p/6382183.html
 
-	### Web服务器：
+	## Web服务器：
 		Tomcat：
 			http://blog.csdn.net/justfy_it/article/details/70948926
 			
@@ -133,9 +132,8 @@
 				
 		Nginx：
 			
-	### Servlet
+	## Servlet
 		
-	### Java
+	## Java
 		
-	### openresty
-	
+	## openresty
