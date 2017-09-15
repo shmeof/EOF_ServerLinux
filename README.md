@@ -40,6 +40,9 @@
 	查看端口占用：
 		netstat -an|grep 8000
 		
+	查看进程：
+		top
+		
 	阿里云端口配置：
 		关于阿里云服务器中Tomcat的<Host name="localhost">中的localhost改为外网ip无法访问的问题
 		http://blog.csdn.net/zhang41228/article/details/74457093
@@ -95,8 +98,8 @@
 		快捷键： M-x sql-mysql
 		
 	
-	spacemacs完整教程
-		http://book.emacs-china.org
+	spacemacs完整教程（推荐）
+		http://book.emacs-china.org/#orgheadline1
 		
 	打开文件：
 		快捷键：M-m f f
@@ -184,6 +187,12 @@
 	http://blog.csdn.net/gongchenupc/article/details/68066990
 	
 	http://www.cnblogs.com/liuyi2614/p/6382183.html
+	
+	启动mysql： service mysqld start
+	登录mysql：mysql -u root -p 
+	端口是否打开：lsof -i:3306
+	状态：service mysqld status
+	日志：/var/log/mysqld.log
 
 ## Web服务器：
 	Tomcat：
@@ -203,8 +212,51 @@
 			
 	Nginx：
 		
+		
 ## Servlet
+	
 	
 ## Java
 	
 ## openresty
+
+## RPC
+	Thrift
+		Centos 6.5 下安装Thrift
+		http://blog.csdn.net/adparking/article/details/44621205
+		Apache Thrift 配置环境（推荐）
+		http://blog.csdn.net/isea533/article/details/48574687
+		
+		报错：g++: Internal error: Killed (program cc1plus)
+		编译Thrift的IDL编译器时，make的时候，错误提示：g++: Internal error: Killed (program cc1plus)
+		http://www.cnblogs.com/573583868wuy/p/6799311.html
+		sudo dd if=/dev/zero of=/swapfile bs=64M count=16 
+		sudo mkswap /swapfile 
+		sudo swapon /swapfile
+
+		报错：src/generate/thrift-t_c_glib_generator.o: file not recognized
+		http://blog.csdn.net/chenycbbc0101/article/details/71108166
+		http://bbs.chinaunix.net/thread-4175420-1-1.html
+	
+		报错：
+		./src/thrift/server/TNonblockingServer.h:43:33: error: event2/event_compat.h: No such file or directory
+		./src/thrift/server/TNonblockingServer.h:44:33: error: event2/event_struct.h: No such file or directory
+		http://blog.csdn.net/isea533/article/details/48574687
+		https://github.com/libevent/libevent/releases/download/release-2.0.22-stable/libevent-2.0.22-stable.tar.gz
+
+		报错：
+		THeaderTransport.h:79: error: class ‘apache::thrift::transport::THeaderTransport’ does not have any field named ‘TVirtualTransport’
+		src/thrift/transport/libthriftz_la-THeaderTransport.lo] Error 1
+		先确认你的thrift是不是0.9.2版本，因为更新的版本make的时候可能出现上面的这个错误
+		
+		报错：
+		../../../lib/cpp/.libs/libthriftnb.so: undefined reference to `evutil_make_socket_closeonexec'
+		../../../lib/cpp/.libs/libthriftnb.so: undefined reference to `evbuffer_get_length'
+		../../../lib/cpp/.libs/libthriftnb.so: undefined reference to `evbuffer_pullup
+		collect2: ld returned 1 exit status
+		http://www.cnblogs.com/zhaochunhua/p/7069054.html
+		解决方案是：我的 libevent 安装在了 /usr/lib 下，只需要在 /usr/lib64 下将所有 /usr/lib 下的 libevent 文件软链接过去就行了。ln -s /usr/lib/libevent* /usr/lib64。
+		
+		
+	
+	
