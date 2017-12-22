@@ -19,7 +19,7 @@
 		查找目录/文件夹： find /（查找范围） -name '查找关键字' -type d
 		查找文件： find /（查找范围） -name 查找关键字 -print
 
-	yum：
+    yum：
 		yum list java*
 		yum list mysql*
 		yum install mysql
@@ -91,13 +91,15 @@
 		linux 下 .sh 文件语法
 		http://blog.sina.com.cn/s/blog_54f82cc201010hfz.html
 	
-		
+	拷贝当前路径到剪切板：pwd|pbcopy
+	将json数据格式化为json样式：cat xxx.json|python -m json.tool
 # 工具
 		SecureCRT
 		WinSCP
 		
 # 环境
 ## Python
+123456
 	
 ## Java
 	
@@ -107,6 +109,10 @@
 ## Djangon
 	Django 教程
 	http://www.runoob.com/django/django-tutorial.html
+
+## Vim
+	跟我一起学习VIM - vim插件合集
+	http://blog.csdn.net/mergerly/article/details/51671890
 	
 ## Spacemacs
 	spacemacs操作：
