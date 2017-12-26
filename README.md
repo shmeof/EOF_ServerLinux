@@ -32,6 +32,16 @@
 		sz –bey 文件名 （远端linux传输文件到本地win）
 		http://blog.csdn.net/huaweitman/article/details/42169247
 
+	mac：linux上传文件及下载文件：
+		下载文件
+		scp username@servername:/path/filename /tmp/local_destination
+		上传文件
+ 		scp /path/local_filename username@servername:/path
+		下载目录
+		scp -r username@servername:remote_dir/ /tmp/local_dir
+		上传目录
+		scp -r /tmp/local_dir username@servername:remote_dir
+
 	linux访问外网代理：
 		linux内网机器访问外网代理设置
 		http://blog.csdn.net/u012454773/article/details/65441887
